@@ -1,0 +1,79 @@
+.item {
+  background: #fefefe;
+  box-shadow: 0 1px 2px rgb(34 25 25 / 40%);
+  margin: 2px 10px 12px;
+  padding: 6px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  max-width: 276px;
+  position: relative;
+}
+
+.item__container {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.item__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  max-width: 190px;
+  margin: 10px 0 10px 21px;
+}
+
+.item__like-btn {
+  width: 21px;
+  height: 18px;
+  object-fit: cover;
+  background: transparent url('../../assets/images/like.svg') no-repeat;
+  border: none;
+  margin: 0 17px 3px 0;
+  cursor: pointer;
+  transition: .2s;
+  box-shadow: none;
+}
+
+.item__like-btn-active {
+  width: 21px;
+  height: 18px;
+  object-fit: cover;
+  background: url('../../assets/images/like-active.svg') no-repeat;
+  border: none;
+  margin: 0 17px 3px 0;
+  cursor: pointer;
+  transition: .2s;
+  box-shadow: none;
+}
+
+.item__delete-btn {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  background: transparent url('../../assets/images/trash.svg') no-repeat;
+  border: none;
+  box-shadow: none;
+}
+
+.item__delete-btn:hover {
+  cursor: pointer;
+  opacity: .6;
+  transition: .2s ease-in-out;
+}
